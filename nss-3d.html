@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NSS - Not Me, But You</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#0b1230;--card:rgba(16,26,66,.72);--red:#e63946;--navy:#1d3a8a;--txt:#f4f6ff;--mut:#b6c0e6;--gold:#ffd166;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:"Trebuchet MS",Segoe UI,Arial,sans-serif;overflow-x:hidden}
+#c{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:rgba(11,18,48,.6);backdrop-filter:blur(8px)}
+nav b{letter-spacing:.15em}nav b span{color:var(--red)}
+nav div a{color:var(--mut);text-decoration:none;margin-left:18px;font-size:14px}
+nav div a:hover{color:#fff}
+main{position:relative;z-index:1}
+section{min-height:100vh;display:flex;align-items:center;padding:90px 5vw 60px}
+.box{max-width:520px;background:var(--card);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px 30px}
+.wide{max-width:900px}
+h1{font-size:clamp(44px,8vw,88px);margin:0;line-height:1}
+h1 span{color:var(--red)}
+h2{font-size:clamp(26px,4vw,38px);margin:0 0 12px}
+p,li{color:var(--mut);line-height:1.6;font-size:17px}
+ul{padding-left:20px;margin:8px 0 0}
+.tag{color:var(--gold);letter-spacing:.2em;font-size:13px;text-transform:uppercase;margin-bottom:10px;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:16px}
+.stat{background:rgba(255,255,255,.06);border-radius:14px;padding:16px;text-align:center}
+.stat b{display:block;font-size:30px;color:var(--gold)}
+.stat small{color:var(--mut)}
+.sw{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.sw i{display:inline-block;padding:8px 14px;border-radius:999px;font-style:normal;font-size:14px;color:#fff}
+.hint{position:fixed;bottom:calc(14px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);z-index:5;color:var(--mut);font-size:13px;background:rgba(11,18,48,.6);padding:6px 14px;border-radius:99px}
+.r{margin-left:auto}
+footer{position:relative;z-index:1;text-align:center;padding:40px 5vw 80px;color:var(--mut)}
+@media(max-width:760px){.box{max-width:100%}.r{margin-left:0}nav div a:nth-child(n+4){display:none}}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<nav><b>N<span>S</span>S</b><div><a href="#about">About</a><a href="#symbol">Symbol</a><a href="#work">Work</a><a href="#numbers">Numbers</a></div></nav>
+<div class="hint">Move your mouse or drag to spin the wheel</div>
+<main>
+<section><div class="box"><span class="tag">National Service Scheme</span><h1>NOT ME,<br><span>BUT YOU</span></h1><p>An Indian government programme that builds students into responsible citizens through community service.</p></div></section>
+
+<section id="about"><div class="box r"><span class="tag">About</span><h2>What is NSS?</h2><p>The National Service Scheme is a Central Government programme run under the Ministry of Youth Affairs and Sports. It was launched on 24 September 1969, the birth centenary year of Mahatma Gandhi, in 37 universities with about 40,000 students.</p><p>Its main aim is the personality development of students through community service. Volunteers come from colleges, universities and senior secondary schools.</p></div></section>
+
+<section><div class="box"><span class="tag">Motto</span><h2>"Not Me, But You"</h2><p>The motto reflects democratic living and selfless service. It teaches volunteers to respect other people's views and care for fellow beings, and it rests on the belief that an individual's welfare depends on the welfare of society as a whole.</p></div></section>
+
+<section id="symbol"><div class="box r"><span class="tag">Symbol</span><h2>The Konark Wheel</h2><p>The NSS badge is based on the giant Rath wheel of the Konark Sun Temple in Odisha. The wheel shows the cycle of creation, preservation and release, and stands for continuous change and striving for social transformation.</p><ul><li>The 8 bars stand for the 24 hours of the day, so volunteers are ready to serve round the clock</li><li>Red shows energy and high spirit</li><li>Navy blue stands for the cosmos</li><li>White stands for purity</li></ul>
+<div class="sw"><i style="background:#e63946">Red</i><i style="background:#1d3a8a">Navy</i><i style="background:#fff;color:#0b1230">White</i></div></div></section>
+
+<section id="work"><div class="box"><span class="tag">What volunteers do</span><h2>Activities</h2><p>Each volunteer completes regular activities of 240 hours and takes part in a 7-day special camp, often in an adopted village.</p><ul><li>Environment care and tree plantation</li><li>Health, hygiene and blood donation drives</li><li>Literacy and awareness programmes</li><li>Disaster relief and rural development</li></ul></div></section>
+
+<section><div class="box"><span class="tag">Objectives</span><h2>Why NSS matters</h2><ul><li>Understand the community and its problems</li><li>Build leadership and teamwork</li><li>Develop civic responsibility and patriotism</li><li>Promote national integration and social harmony</li></ul></div></section>
+
+<section id="numbers"><div class="box wide" style="width:100%"><span class="tag">NSS in numbers</span><h2>A movement of millions</h2>
+<div class="grid"><div class="stat"><b>1969</b><small>Year launched</small></div><div class="stat"><b>37</b><small>Universities at start</small></div><div class="stat"><b>40,000</b><small>First volunteers</small></div><div class="stat"><b>3M+</b><small>Volunteers today</small></div><div class="stat"><b>24 Sep</b><small>NSS Day</small></div></div>
+<p style="margin-top:16px">Volunteer counts differ slightly between sources, from about 3.2 million to over 4 million.</p></div></section>
+</main>
+<footer>Made for class presentation. Sources: NSS unit pages of Indian universities and colleges.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var cv=document.getElementById('c');
+var r=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+r.setPixelRatio(Math.min(devicePixelRatio,2));
+var sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,100);cam.position.z=9;
+sc.add(new THREE.AmbientLight(0xffffff,.6));
+var d=new THREE.DirectionalLight(0xffffff,1);d.position.set(4,5,6);sc.add(d);
+var p2=new THREE.PointLight(0xe63946,1.2,30);p2.position.set(-5,-2,4);sc.add(p2);
+var W=new THREE.Group();sc.add(W);
+var red=new THREE.MeshStandardMaterial({color:0xe63946,metalness:.5,roughness:.35});
+var navy=new THREE.MeshStandardMaterial({color:0x2a4db5,metalness:.5,roughness:.35});
+var wht=new THREE.MeshStandardMaterial({color:0xffffff,metalness:.3,roughness:.4});
+var R=2.2;
+W.add(new THREE.Mesh(new THREE.TorusGeometry(R,.16,20,96),red));
+W.add(new THREE.Mesh(new THREE.TorusGeometry(R*.62,.06,12,80),navy));
+var hub=new THREE.Mesh(new THREE.CylinderGeometry(.42,.42,.3,32),wht);hub.rotation.x=Math.PI/2;W.add(hub);
+var hub2=new THREE.Mesh(new THREE.SphereGeometry(.22,24,24),red);hub2.position.z=.18;W.add(hub2);
+for(var i=0;i<4;i++){var b=new THREE.Mesh(new THREE.BoxGeometry(.14,R*2,.14),i%2?navy:wht);b.rotation.z=i*Math.PI/4;W.add(b);}
+for(var j=0;j<24;j++){var a=j/24*Math.PI*2;var s=new THREE.Mesh(new THREE.SphereGeometry(.07,12,12),wht);s.position.set(Math.cos(a)*(R+.28),Math.sin(a)*(R+.28),0);W.add(s);}
+var n=700,pos=new Float32Array(n*3);
+for(var k=0;k<n*3;k++)pos[k]=(Math.random()-.5)*40;
+var g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+var stars=new THREE.Points(g,new THREE.PointsMaterial({color:0xb6c0e6,size:.06}));sc.add(stars);
+var mx=0,my=0,drag=false,lx=0,spin=0,vel=0;
+addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;});
+addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;});
+addEventListener('pointerup',function(){drag=false;});
+addEventListener('pointermove',function(e){if(drag){vel=(e.clientX-lx)*.01;lx=e.clientX;}});
+function size(){var w=innerWidth,h=innerHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();}
+addEventListener('resize',size);size();
+function tick(){
+var sy=scrollY/Math.max(1,document.body.scrollHeight-innerHeight);
+var mob=innerWidth<760;
+var tx=mob?0:(sy<.05?2.6:(Math.floor(sy*7)%2?-2.6:2.6));
+W.position.x+=(tx-W.position.x)*.04;
+W.position.y+=((mob?1.8:0)-W.position.y)*.05;
+var sc2=mob?.6:1;W.scale.setScalar(sc2);
+spin+=vel+.004;vel*=.95;
+W.rotation.z=spin+sy*Math.PI*4;
+W.rotation.y=mx*.8+Math.sin(sy*10)*.3;
+W.rotation.x=-my*.5;
+stars.rotation.y=sy*1.5;stars.rotation.x=sy*.6;
+r.render(sc,cam);requestAnimationFrame(tick);}
+tick();
+})();
+</script>
+</body>
+</html>
